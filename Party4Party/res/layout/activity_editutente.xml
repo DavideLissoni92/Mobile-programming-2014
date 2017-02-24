@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#000000"
+    tools:context=".RegistrationActivity" >
+
+       <EditText
+           android:id="@+id/Nomeedit"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/Nicknameedit"
+           android:layout_below="@+id/Nicknameedit"
+           android:layout_marginTop="20dp"
+           android:ems="10"
+            android:textColorHint="#66FF33"
+           android:hint="Nome"
+           android:gravity="center"
+           android:inputType="textPersonName"
+           android:textColor="#66FF33" />
+
+       <EditText
+           android:id="@+id/Cognomeedit"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/Nomeedit"
+           android:layout_below="@+id/Nomeedit"
+           android:layout_marginTop="21dp"
+           android:ems="10"
+            android:textColorHint="#66FF33"
+           android:gravity="center"
+           android:hint="Cognome"
+           android:inputType="textPersonName"
+           android:textColor="#66FF33" />
+
+       <EditText
+           android:id="@+id/Emailedit"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/Cognomeedit"
+           android:layout_below="@+id/Cognomeedit"
+           android:layout_centerVertical="true"
+           android:ems="10"
+            android:textColorHint="#66FF33"
+           android:gravity="center"
+           android:hint="Email"
+           android:layout_marginTop="20dp"
+           android:inputType="textEmailAddress"
+           android:textColor="#66FF33" />
+
+       <EditText
+           android:id="@+id/VecchiaPasswordedit"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+            android:textColorHint="#66FF33"
+           android:layout_alignLeft="@+id/Emailedit"
+           android:layout_below="@+id/Emailedit"
+           android:ems="10"
+                      android:layout_marginTop="20dp"
+           
+           android:gravity="center"
+           android:hint="Vecchia password"
+           android:inputType="textPassword"
+           android:textColor="#66FF33" />
+       
+       <EditText
+           android:id="@+id/ConfermaPasswordedit"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+            android:textColorHint="#66FF33"
+           android:layout_alignLeft="@+id/VecchiaPasswordedit"
+           android:layout_below="@+id/VecchiaPasswordedit"
+           android:ems="10"
+                      android:layout_marginTop="20dp"
+           
+           android:gravity="center"
+           android:hint="Conferma password"
+           android:inputType="textPassword"
+           android:textColor="#66FF33" />
+
+       <EditText
+           android:id="@+id/Nicknameedit"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentTop="true"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="6dp"
+           android:ems="10"
+           android:gravity="center"
+           android:hint="Nickname"
+           android:inputType="textPersonName"
+           android:textColor="#66FF33"
+           android:textColorHint="#66FF33" >
+
+           <requestFocus />
+       </EditText>
+
+       <EditText
+           android:id="@+id/Passwordedit"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/ConfermaPasswordedit"
+           android:layout_below="@+id/ConfermaPasswordedit"
+           android:layout_marginTop="14dp"
+           android:ems="10"
+           android:gravity="center"
+           android:hint="Password"
+           android:inputType="textPassword"
+           android:textColor="#66FF33"
+           android:textColorHint="#66FF33" />
+
+       <Button
+           android:id="@+id/Modifica"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_centerHorizontal="true"
+           android:background="#66FF33"
+           android:gravity="center"
+           android:paddingLeft="20dip"
+           android:paddingRight="20dip"
+           android:text="Continua la registrazione" />
+
+</RelativeLayout>

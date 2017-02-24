@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    
+  
+    
+    <item android:id="@+id/action_edit_festa"
+          android:icon="@drawable/ic_action_edit"
+          android:title="action_edit"
+          android:showAsAction="always" >
+        <menu >
+   
+        <group android:id="@+id/group2" >
+            
+            <item android:id="@+id/action_edit_lineup" android:title="Modifica lineup" />
+            <item android:id="@+id/action_edit_info" android:title="Modifica info" />  
+            <item android:id="@+id/action_edit_descrizione" android:title="Modifica descrizione" />     
+        </group>  
+        </menu>  
+        
+        
+              </item>
+        
+    
+    <item android:id="@+id/action_settings"
+          android:icon="@drawable/ic_settings"
+          android:title="action_settings"
+          android:showAsAction="always" >
+          
+        <menu >
+   
+        <group android:id="@+id/group2" >
+            
+            <item android:id="@+id/action_invita" android:title="Invita" />
+            <item android:id="@+id/action_partecipanti" android:title="Partecipanti" /> 
+            <item android:id="@+id/action_home" android:title="Home" />     
+        </group>  
+        </menu>
+    </item>
+
+</menu>

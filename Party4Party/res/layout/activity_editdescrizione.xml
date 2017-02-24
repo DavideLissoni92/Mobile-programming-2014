@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+    
+    
+    
+    
+    <Button
+        android:id="@+id/btnEditDescrizione"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="106dp"
+        android:background="#66FF33"
+        android:paddingLeft="20dip"
+           android:paddingRight="20dip"
+        android:text="Conferma" />
+
+     <EditText
+         android:id="@+id/txtEditDescrizione"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/EditRuolo"
+         android:layout_marginTop="85dp"
+         android:ems="10"
+         android:gravity="center"
+         android:inputType="textMultiLine"
+         android:hint="Inserisci informazioni festa"
+         android:textColor="#66FF33"
+         android:textColorHint="#66FF33" >
+
+         <requestFocus />
+     </EditText>
+
+     <Spinner
+         android:id="@+id/EditRuolo"
+         android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+         android:layout_marginTop="28dp"
+         android:background="#66FF33" />
+
+</RelativeLayout>

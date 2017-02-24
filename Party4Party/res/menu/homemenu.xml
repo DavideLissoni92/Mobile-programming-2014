@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+   <item android:id="@+id/action_newparty"
+          android:icon="@drawable/ic_action_new_event"
+          android:title="action_new_event"
+          android:showAsAction="always" />
+    
+   
+    <item android:id="@+id/action_settings"
+          android:icon="@drawable/ic_settings"
+          android:title="action_settings"
+          android:showAsAction="always" >
+          
+        <menu >
+        <group android:id="@+id/group2" >
+            <item android:id="@+id/action_preferiti" android:title="Preferiti" />
+            <item android:id="@+id/ action_viewprofilo" android:title="Visualizza profilo" />    
+            <item android:id="@+id/action_cerca" android:title="Cerca" />
+            <item android:id="@+id/action_esci" android:title="Esci" />
+        </group>  
+        </menu>
+    </item>
+   
+
+</menu>

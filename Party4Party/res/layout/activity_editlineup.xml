@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000">
+    
+        <RelativeLayout android:background="#000000"
+        android:layout_height="match_parent" android:layout_width="match_parent"
+        android:layout_weight="1.2">
+
+        <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#66FF33"
+        android:text="Inserisci la lineup(orari, generi, nome dj)" />
+
+     <Button
+         android:id="@+id/editcontinuacreafesta2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_below="@+id/editoradalineup"
+         android:layout_marginRight="17dp"
+         android:text="Inserisci" 
+         android:paddingLeft="15dip"
+           android:paddingRight="15dip"
+         android:background="#66FF33"/>
+
+       <ListView
+         android:id="@+id/editlistalineup"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/editnomedjlineup"
+         android:layout_marginTop="20dip"
+          >
+     </ListView>
+
+       <EditText
+           android:id="@+id/editoradalineup"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/editoraalineup"
+           android:layout_below="@+id/textView1"
+           android:layout_marginTop="14dp"
+           android:ems="10"
+           android:focusable="false"
+           android:hint="ora inizio"
+           android:inputType="time"
+           android:gravity="center"
+           android:textColor="#66FF33"
+           android:textColorHint="#66FF33"
+           android:textSize="15sp" />
+
+       <EditText
+           android:id="@+id/editoraalineup"
+           android:layout_width="wrap_content"
+           android:gravity="center"
+           android:layout_height="wrap_content"
+           android:layout_above="@+id/editgenerelineup"
+           android:layout_alignLeft="@+id/editgenerelineup"
+           android:ems="10"
+           android:focusable="false"
+           android:layout_marginTop="14dp"
+           android:hint="ora fine"
+           android:inputType="time"
+           android:textColor="#66FF33"
+           android:textColorHint="#66FF33"
+           android:textSize="15sp" >
+
+           <requestFocus />
+       </EditText>
+
+       <EditText
+           android:id="@+id/editnomedjlineup"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/editgenerelineup"
+           android:gravity="center"
+           android:layout_marginRight="20dp"
+           android:layout_marginTop="14dp"
+           android:layout_toLeftOf="@+id/editcontinuacreafesta2"
+           android:ems="10"
+           android:hint="dj"
+           android:inputType="text"
+           android:textColor="#66FF33"
+           android:textColorHint="#66FF33"
+           android:textSize="15sp" />
+
+       <EditText
+           android:id="@+id/editgenerelineup"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/editnomedjlineup"
+           android:layout_below="@+id/editcontinuacreafesta2"
+           android:layout_marginTop="14dp"
+           android:ems="10"
+           android:hint="generi"
+           android:gravity="center"
+           android:inputType="text"
+           android:textColor="#66FF33"
+           android:textColorHint="#66FF33"
+           android:textSize="15sp" />
+   
+      </RelativeLayout>  
+        
+        
+       
+            
+		
+</LinearLayout>
+     
+

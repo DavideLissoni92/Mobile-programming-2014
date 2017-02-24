@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#000000" >
+    
+    
+    <EditText 
+        android:id="@+id/cercanomeinvito"
+         android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:hint="cerca utente per nome"
+    android:textColorHint="#66FF33"
+           android:textColor="#66FF33"
+        
+        
+        />
+    <EditText
+        android:id="@+id/cercacognomeinvito"
+     android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:hint="cerca utente per cognome"
+    android:textColorHint="#66FF33"
+           android:textColor="#66FF33"
+        android:layout_below="@+id/cercanomeinvito"/>
+     
+     <EditText
+         android:id="@+id/cercanicknameinvito"
+     android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:hint="cerca utente per nickname"
+    android:textColorHint="#66FF33"
+           android:textColor="#66FF33"
+        android:layout_below="@+id/cercacognomeinvito"/>
+    
+  
+    
+<ExpandableListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       
+   
+        android:layout_below="@+id/cercanicknameinvito" >
+
+    </ExpandableListView>
+
+<Button
+    android:id="@+id/btncerca"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/cercacognomeinvito"
+    android:layout_toRightOf="@+id/cercacognomeinvito"
+    android:background="#66FF33"
+    android:paddingLeft="17dip"
+    android:paddingRight="17dip"
+    android:text="Invita" />
+
+</RelativeLayout>

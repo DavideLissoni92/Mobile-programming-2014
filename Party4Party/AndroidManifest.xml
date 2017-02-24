@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.progtablet"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.progtablet.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegistrationActivity"
+                  android:label="@string/app_name"
+                  android:parentActivityName=".LoginActivity">
+        </activity>
+        <activity android:name=".RegistrationActivity2"
+                  android:label="@string/app_name"
+                  android:windowSoftInputMode="stateHidden"
+                  android:parentActivityName=".RegistrationActivity">
+        </activity>
+        
+        <activity android:name=".RicercaActivity"
+                  android:label="@string/app_name"
+                  android:parentActivityName=".HomeActivity">
+        </activity>
+        <activity android:name=".ListaPreferitiActivity"
+                  android:label="@string/app_name"
+                  android:parentActivityName=".HomeActivity">
+        </activity>
+        <activity android:name=".AddPrestitiActivity"
+                  android:label="@string/app_name"
+                  android:windowSoftInputMode="stateHidden"
+                  android:parentActivityName=".ViewUtenteActivity">
+        </activity>
+        <activity android:name=".HomeActivity"
+                  android:label="@string/app_name">
+        </activity>
+        <activity android:name=".ViewUtenteActivity"
+                  android:label="@string/app_name"
+                  android:parentActivityName=".HomeActivity">
+        </activity>
+        <activity android:name=".EditUtenteActivity"
+                  android:label="@string/app_name"
+                  android:parentActivityName=".ViewUtenteActivity">
+        </activity>
+        <activity android:name=".EditDescrizioneUtenteActivity"
+                  android:label="@string/app_name"
+                  android:parentActivityName=".ViewUtenteActivity">
+        </activity>
+         
+        <activity android:name=".NewPartyActivity"
+                  android:label="@string/app_name"
+                  android:parentActivityName=".HomeActivity">
+        </activity>
+        <activity android:name=".NewPartyActivity2"
+                  android:label="@string/app_name"
+                  android:windowSoftInputMode="stateHidden"
+                  android:parentActivityName=".NewPartyActivity">
+        </activity>
+        <activity android:name=".NewPartyActivity3"
+                  android:label="@string/app_name"
+                  android:parentActivityName=".NewPartyActivity2">
+        </activity>
+        <activity android:name=".InvitaActivity"
+                  android:label="@string/app_name"
+                  android:parentActivityName=".ViewFestaActivity"
+                  >
+        </activity>
+        <activity android:name=".PartecipantiActivity"
+                  android:label="@string/app_name"
+                  android:parentActivityName=".ViewFestaActivity"
+                  >
+        </activity>
+         <activity android:name=".ViewFestaActivity"
+                  android:label="@string/app_name"
+                  android:parentActivityName=".HomeActivity"
+                  >
+        </activity>
+        <activity android:name=".EditFestaActivity"
+                  android:label="@string/app_name"
+                  android:parentActivityName=".ViewFestaActivity"
+                  >
+        </activity>
+        <activity android:name=".EditLineupActivity"
+                  android:label="@string/app_name"
+                  android:windowSoftInputMode="stateHidden"
+                  android:parentActivityName=".ViewFestaActivity"
+                  >
+        </activity>
+        <activity android:name=".EditFestaDescrizioneActivity"
+                  android:label="@string/app_name"
+                  android:parentActivityName=".ViewFestaActivity"
+                  >
+        </activity>
+        
+    </application>
+
+</manifest>

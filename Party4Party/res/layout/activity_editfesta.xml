@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#000000">
+
+    <EditText
+        android:id="@+id/editoraa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editgiornoa"
+        android:layout_alignBottom="@+id/editgiornoa"
+        android:layout_alignLeft="@+id/editorada"
+        android:ems="10"
+        android:textColor="#66FF33"
+                  android:textColorHint="#66FF33"
+        
+        android:hint="ora"
+        android:inputType="time"
+        android:textSize="10sp" 
+        android:focusable="false"/>
+
+    <EditText
+        android:id="@+id/editorada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#66FF33"
+        android:layout_alignBaseline="@+id/editgiornoda"
+        android:layout_alignBottom="@+id/editgiornoda"
+        android:layout_alignRight="@+id/editnomefesta"
+        android:ems="10"
+                  android:textColorHint="#66FF33"
+        
+        android:hint="ora"
+        android:inputType="time"
+        android:textSize="10sp" 
+        android:focusable="false"/>
+
+      <EditText
+          android:id="@+id/editnomefesta"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="#66FF33"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="14dp"
+          android:ems="10"
+          android:hint="Nome festa"
+          android:textColorHint="#66FF33"
+          android:inputType="textPersonName">
+          
+          <requestFocus /> 
+          </EditText>
+
+      <Button
+          android:id="@+id/confermaeditfesta"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_centerHorizontal="true"
+          android:layout_marginBottom="39dp"
+          android:background="#66FF33"
+          android:paddingLeft="20dip"
+          android:paddingRight="20dip"
+          android:text="Conferma" />
+
+      <EditText
+          android:id="@+id/editgeneri"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/confermaeditfesta"
+          android:layout_alignRight="@+id/editoraa"
+          android:layout_marginBottom="24dp"
+          android:ems="10"
+          android:hint="Generi"
+          android:inputType="textPersonName"
+          android:textColor="#66FF33"
+          android:textColorHint="#66FF33" />
+
+      <EditText
+          android:id="@+id/editindirizzo"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/editgeneri"
+          android:layout_alignLeft="@+id/editgeneri"
+          android:layout_marginBottom="15dp"
+          android:ems="10"
+          android:hint="Indirizzo"
+          android:inputType="textPersonName"
+          android:textColor="#66FF33"
+          android:textColorHint="#66FF33" />
+
+      <EditText
+          android:id="@+id/editgiornoa"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/editgiornoda"
+          android:layout_centerVertical="true"
+          android:ems="10"
+          android:focusable="false"
+          android:hint="giorno"
+          android:inputType="date"
+          android:textColor="#66FF33"
+          android:textColorHint="#66FF33"
+          android:textSize="10sp" />
+
+      <EditText
+          android:id="@+id/editgiornoda"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/editoraa"
+          android:layout_marginBottom="47dp"
+          android:layout_toRightOf="@+id/TextView01"
+          android:ems="10"
+          android:focusable="false"
+          android:hint="giorno"
+          android:inputType="date"
+          android:textColor="#66FF33"
+          android:textColorHint="#66FF33"
+          android:textSize="10sp" />
+
+      <TextView
+          android:id="@+id/textView1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/editgiornoda"
+          android:layout_marginBottom="22dp"
+          android:layout_marginRight="14dp"
+          android:layout_toLeftOf="@+id/editnomefesta"
+          android:text="DA"
+          android:textColor="#66FF33" />
+
+      <TextView
+          android:id="@+id/TextView01"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/editgiornoa"
+          android:layout_alignRight="@+id/textView1"
+          android:text="A"
+          android:textColor="#66FF33" />
+
+</RelativeLayout>
+
+
+
+
+

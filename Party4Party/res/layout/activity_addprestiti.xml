@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"   
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000" >
+    
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="25dp"
+        android:textColor="#66FF33"
+        android:text="Aggiungi gli oggetti che sei disposto a prestare" />
+    
+    
+    <Spinner
+        android:id="@+id/InserisciOggetto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#66FF33" 
+        android:layout_below="@+id/label"/>
+
+  <EditText
+        android:id="@+id/txtInserisciPrestito"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:layout_below="@+id/InserisciOggetto"
+       android:textColor="#66FF33"
+       android:textColorHint="#66FF33"
+        android:hint="Inserisci descrizione dell'oggetto che stai aggiungendo"
+    />
+    <Button
+        android:id="@+id/salvaprestiti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salva" 
+        android:background="#66FF33"/>
+    
+    <ListView
+       android:id="@+id/@android:id/list"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       
+       android:layout_marginTop="10dip"
+       
+       
+       /> 
+
+</LinearLayout>
